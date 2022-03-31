@@ -30,7 +30,7 @@ class _WashingMachineCaseState extends State<WashingMachineCase> {
 
   @override
   Widget build(BuildContext context) {
-    const circularBorder = const BorderRadius.all(Radius.circular(200));
+    const circularBorder =  BorderRadius.all(Radius.circular(200));
     const ring1Offset = 35;
     const ring2Offset = 70;
     const ring3Offset = 28;

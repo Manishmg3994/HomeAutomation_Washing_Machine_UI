@@ -11,7 +11,7 @@ import 'package:vector_math/vector_math.dart' as Vector;
  * Source: https://github.com/nhancv/nc_flutter_util/blob/master/lib/demo5.dart
  */
 class WaveContainer extends StatefulWidget {
-  WaveContainer({
+  const WaveContainer({
     Key? key,
     required this.size,
     required this.offset,
@@ -71,10 +71,10 @@ class _WaveContainerState extends State<WaveContainer>
 
   @override
   Widget build(BuildContext context) {
-    List<Color> _gradientColors = [
-      Color.fromRGBO(254, 193, 45, 1),
-      Color.fromRGBO(253, 139, 51, 1),
-      Color.fromRGBO(95, 84, 228, 1),
+    List<Color> _gradientColors = const [
+      Color.fromARGB(255, 82, 216, 240),
+      Color.fromARGB(255, 58, 185, 202),
+      Color.fromARGB(255, 52, 179, 238),
     ];
     List<double> _stops = [0.0, 0.3, 0.6];
 

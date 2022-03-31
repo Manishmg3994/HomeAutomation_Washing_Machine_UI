@@ -1,3 +1,4 @@
+import 'package:awsome_project/view_models/service_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:awsome_project/shared/colors.dart';
 import 'package:awsome_project/shared/widgets/neumorphic_icon_button.dart';
@@ -6,18 +7,21 @@ import 'package:awsome_project/view_models/theme_view_model.dart';
 import 'package:provider/provider.dart';
 
 class SettingsBottomSheet extends StatefulWidget {
+  const SettingsBottomSheet({Key? key}) : super(key: key);
+
   @override
   _SettingsBottomSheetState createState() => _SettingsBottomSheetState();
 }
 
 class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
+  static bool get isDarkMode => ServiceLocator.get<ThemeViewModel>().darkMode;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 120,
       decoration: BoxDecoration(
         color: CustomColors.primaryColor,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(45),
           topRight: Radius.circular(45),
         ),
@@ -30,7 +34,7 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
             builder: (context, viewModel, _) {
               return NeumorphicIconButton(
                 icon: Icon(
-                  Icons.brightness_low,
+                  isDarkMode ? Icons.brightness_7_rounded : Icons.dark_mode,
                   color: CustomColors.icon,
                 ),
                 pressed: viewModel.darkMode,

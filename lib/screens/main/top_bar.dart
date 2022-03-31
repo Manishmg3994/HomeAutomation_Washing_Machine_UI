@@ -27,10 +27,11 @@ class TopBar extends StatelessWidget {
                   context: context,
                   backgroundColor: Colors.transparent,
                   builder: (BuildContext context) {
-                    return SettingsBottomSheet();
+                    return const SettingsBottomSheet();
                   });
             },
           ),
+          // ignore: prefer_const_constructors
           TimerPanel()
         ],
       ),

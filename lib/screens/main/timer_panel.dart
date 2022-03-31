@@ -6,7 +6,7 @@ import 'package:awsome_project/view_models/timer_view_model.dart';
 import 'package:provider/provider.dart';
 
 class TimerPanel extends StatefulWidget {
-  TimerPanel({Key? key}) : super(key: key);
+  const TimerPanel({Key? key}) : super(key: key);
 
   @override
   _TimerPanelState createState() => _TimerPanelState();

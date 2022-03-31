@@ -1,16 +1,14 @@
 # awsome_project
 
-A new Flutter project.
+# ChangeMents 
+*Important update in water level indicator
+* color schene changed
+* icon color changed
+* dark mod modifications
+* timer modifications
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Need Support
+**if you wish this home Automation Project becomes reallty then for further research you should support me and donations are welcomed ,So that i can give this project a realty on HARDWARE projects too ,What you suggest which Harware is better for making it reallty or any company wish <Harware or software > to hire me as a tech person you are welcomed ,wish hardware programm will soon be released** 

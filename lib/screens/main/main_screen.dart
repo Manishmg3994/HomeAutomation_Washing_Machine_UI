@@ -27,14 +27,14 @@ class MainScreen extends StatelessWidget {
         color: CustomColors.primaryColor,
         child: Scaffold(
           backgroundColor: CustomColors.primaryColor,
-          appBar:  PreferredSize(
+          appBar: PreferredSize(
             preferredSize: Size.fromHeight(100),
             child: SafeArea(
               child: TopBar(),
             ),
           ),
           drawer: ClipRRect(
-            borderRadius:  BorderRadius.only(
+            borderRadius: BorderRadius.only(
               topRight: Radius.circular(45),
               bottomRight: Radius.circular(45),
             ),
@@ -79,7 +79,7 @@ class MainScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 26,
                           color: CustomColors.primaryTextColor,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -106,6 +106,7 @@ class _FunctionButtonsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isOn = false;
     var margin = EdgeInsets.only(bottom: 28);
     return Consumer<MainViewModel>(
       builder: (context, viewModel, _) {
@@ -123,7 +124,10 @@ class _FunctionButtonsList extends StatelessWidget {
               margin: margin,
               icon: Icon(
                 Icons.power_settings_new,
-                color: CustomColors.icon,
+                color: (isOn =
+                        true && (viewModel.modeStatus == ModeStatus.running))
+                    ? Colors.green
+                    : Colors.red, //?CustomColors.icon,
               ),
               onTap: () => viewModel.stop(),
             ),
@@ -141,7 +145,9 @@ class _FunctionButtonsList extends StatelessWidget {
                 viewModel.modeStatus == ModeStatus.running
                     ? Icons.pause
                     : Icons.play_arrow,
-                color: CustomColors.icon,
+                color: (isOn && (viewModel.modeStatus == ModeStatus.running))
+                    ? Colors.greenAccent
+                    : Colors.pinkAccent, //CustomColors.icon,
               ),
               pressed: viewModel.modeStatus == ModeStatus.running,
               onTap: () => viewModel.runOrPause(),

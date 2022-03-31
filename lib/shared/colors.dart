@@ -71,13 +71,13 @@ class CustomColors {
       Color.fromRGBO(255, 255, 255, 1);
   static Color _containerInnerShadowBottomDark = Color.fromRGBO(49, 54, 60, 1);
 
-  static Color _primaryTextColorLight = Color.fromRGBO(53, 54, 59, 1);
+  static Color _primaryTextColorLight = Color.fromARGB(255, 52, 53, 54);
   static Color _primaryTextColorDark = Color.fromRGBO(255, 255, 255, 1);
 
-  static Color _secondaryTextColorLight = Color.fromRGBO(144, 149, 166, 1);
-  static Color _secondaryTextColorDark = Color.fromRGBO(139, 144, 160, 1);
+  static Color _secondaryTextColorLight = Color.fromARGB(255, 54, 233, 114);
+  static Color _secondaryTextColorDark = Color.fromARGB(255, 179, 224, 13);
 
-  static Color _iconLight = Color.fromRGBO(144, 149, 166, 1);
+  static Color _iconLight = Color.fromARGB(226, 90, 244, 255);
   static Color _iconDark = Color.fromRGBO(137, 142, 158, 1);
 
   static Color _indicatorBackgroundLight = Color.fromRGBO(255, 255, 255, 1);
@@ -112,7 +112,7 @@ class CustomColors {
     Color.fromRGBO(243, 246, 248, 1),
     Color.fromRGBO(221, 228, 236, 1),
   ];
-  static final  List<Color> _drumRing1ColorsDark = [
+  static final List<Color> _drumRing1ColorsDark = [
     Color.fromRGBO(45, 50, 57, 1),
     Color.fromRGBO(46, 51, 57, 1),
     Color.fromRGBO(28, 30, 35, 1),
@@ -129,7 +129,7 @@ class CustomColors {
     Color.fromRGBO(32, 35, 41, 1),
   ];
 
-  static final  List<Color> _drumRing3ColorsLight = [
+  static final List<Color> _drumRing3ColorsLight = [
     Color.fromRGBO(205, 216, 227, 1),
     Color.fromRGBO(207, 218, 228, 1),
     Color.fromRGBO(243, 245, 247, 1),

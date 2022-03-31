@@ -46,7 +46,7 @@ class MainViewModel with ChangeNotifier {
   ModeItemModel? get selectedMode => _selectedMode;
   ModeStatus get modeStatus => _modeStatus;
 
-  double _waterValue = 600.0;
+  double _waterValue = 30.0;
   ModeItemModel? _selectedMode;
   ModeStatus _modeStatus = ModeStatus.notStarted;
 
